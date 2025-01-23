@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  /* #00927c; */
+  --primary-color: @apply bg-pink-500;
+  --secondary-color: @apply bg-pink-400;
+  /* #00927c; */
+}
+
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+.logo{
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: teal;
+}
+
+
+
+.blur-bg {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px); /* For Safari */
+}
+
+.css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper  {
+
+   box-shadow: rgba(225, 225, 225, 0.24) 0px 3px 8px !important;
+ 
+}
+
+
+
+
