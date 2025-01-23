@@ -73,8 +73,7 @@
 
 
 import React from "react";
-import { Avatar, IconButton, Box, Rating } from "@mui/material";
-import Grid2 from "@mui/material/Unstable_Grid2"; // Import Grid2 from the unstable package
+import { Avatar, IconButton, Box, Grid, Rating } from "@mui/material";
 import DeleteIcon from '@mui/icons-material/Delete';
 import { red } from "@mui/material/colors";
 import { useAppDispatch, useAppSelector } from "../../../Redux Toolkit/Store";
@@ -96,8 +95,8 @@ const ProductReviewCard = ({ item }: ProductReviewCardProps) => {
 
   return (
     <div className="flex justify-between">
-      <Grid2 container spacing={2} gap={3}>
-        <Grid2 xs={1}>
+      <Grid container spacing={2} gap={3}>
+        <Grid item xs={1}>
           <Box>
             <Avatar
               className="text-white"
@@ -108,8 +107,8 @@ const ProductReviewCard = ({ item }: ProductReviewCardProps) => {
               {item.user.fullName[0].toUpperCase()}
             </Avatar>
           </Box>
-        </Grid2>
-        <Grid2 xs={9}>
+        </Grid>
+        <Grid item xs={9}>
           <div className="space-y-2">
             <div className="">
               <p className="font-semibold text-lg">{item.user.fullName}</p>
@@ -131,8 +130,8 @@ const ProductReviewCard = ({ item }: ProductReviewCardProps) => {
               ))}
             </div>
           </div>
-        </Grid2>
-      </Grid2>
+        </Grid>
+      </Grid>
       {item.user.id === user.user?.id && (
         <div className="">
           <IconButton onClick={handleDeleteReview}>
