@@ -4,9 +4,9 @@ interface PromptMessageProps{
     message:string,
     index:number
 }
-const PromptMessage = ({message}:PromptMessageProps) => {
+const PromptMessage = ({message,index}:PromptMessageProps) => {
   return (
-    <div className='px-3 py-4'>{message} </div>
+    <div className='px-3 py-4'>{message} - {index}</div>
   )
 }
 
