@@ -22,7 +22,7 @@ const AdminDashboard = () => {
   return (
     <>
       <div className="min-h-screen">
-        <Navbar DrawerList={AdminDrawerList} />
+        <Navbar  DrawerList={AdminDrawerList} />
         <section className="lg:flex lg:h-[90vh]">
           <div className="hidden lg:block h-full">
             <AdminDrawerList />
