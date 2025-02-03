@@ -147,7 +147,7 @@ const Navbar = () => {
           </IconButton>
           {
             user.user && (
-              <IconButton onClick={() => navigate("/cart")}>
+              <IconButton onClick={() => navigate("/")}>
             <Badge badgeContent={cart?.cart?.cartItems.length} color="primary">
               <LogoutOutlined
                 sx={{ fontSize: 29 }}
