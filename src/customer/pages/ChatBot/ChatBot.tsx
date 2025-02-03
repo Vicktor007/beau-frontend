@@ -89,7 +89,7 @@ const ChatBot = ({handleClose,productId}:ChatBotProps) => {
                     <input
                         onChange={handlePromptChange}
                         type="text"
-                        placeholder="give your prompt"
+                        placeholder="type something here"
                         className="rounded-bl-lg pl-5 h-full w-full bg-slate-100 border-none outline-none"
                     />
                     <Button
