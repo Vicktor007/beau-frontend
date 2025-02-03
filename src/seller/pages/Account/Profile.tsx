@@ -62,7 +62,7 @@ const Profile = () => {
     if (sellers.profileUpdated || sellers.error) {
       setOpenSnackbar(true);
     }
-  }, [sellers.profileUpdated]);
+  }, [sellers.error, sellers.profileUpdated]);
 
   return (
     <div className="lg:p-20 space-y-20">
@@ -91,17 +91,17 @@ const Profile = () => {
           <div>
             <ProfileFildCard
               keys={"Seller Name"}
-              value={sellers.profile?.sellerName}
+              value={sellers?.profile?.sellerName}
             />
             <Divider />
             <ProfileFildCard
               keys={"Seller Email"}
-              value={sellers.profile?.email}
+              value={sellers?.profile?.email}
             />
             <Divider />
             <ProfileFildCard
               keys={"Seller Mobile"}
-              value={sellers.profile?.mobile}
+              value={sellers?.profile?.mobile}
             />
           </div>
         </div>
