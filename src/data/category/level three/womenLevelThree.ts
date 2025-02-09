@@ -2,85 +2,85 @@ export const womenLevelThree = [
     {
         "name": "Women Kurtas & Suits",
         "categoryId": "women_kurtas_and_suits",
-        "parentCategoryName": "Indian & Fusion Wear",
-        "parentCategoryId": "women_indian_and_fusion_wear",
+        "parentCategoryName": "Fusion Wear",
+        "parentCategoryId": "women_fusion_wear",
         "level":3
     },
     {
         "name": "Women Kurtis, Tunics & Tops",
         "categoryId": "women_kurtis_tunics_tops",
-        "parentCategoryName": "Indian & Fusion Wear",
-        "parentCategoryId": "women_indian_and_fusion_wear",
+        "parentCategoryName": "Fusion Wear",
+        "parentCategoryId": "women_fusion_wear",
         "level":3
     },
     {
         "name": "Women Sarees",
         "categoryId": "women_sarees",
-        "parentCategoryName": "Indian & Fusion Wear",
-        "parentCategoryId": "women_indian_and_fusion_wear",
+        "parentCategoryName": "Fusion Wear",
+        "parentCategoryId": "women_fusion_wear",
         "level":3
     },
     {
         "name": "Women Ethnic Wear",
         "categoryId": "women_ethnic_wear",
-        "parentCategoryName": "Indian & Fusion Wear",
-        "parentCategoryId": "women_indian_and_fusion_wear",
+        "parentCategoryName": "Fusion Wear",
+        "parentCategoryId": "women_fusion_wear",
         "level":3
     },
     {
         "name": "Women Leggings, Salwars & Churidars",
         "categoryId": "women_leggings_salwars_churidars",
-        "parentCategoryName": "Indian & Fusion Wear",
-        "parentCategoryId": "women_indian_and_fusion_wear",
+        "parentCategoryName": "Fusion Wear",
+        "parentCategoryId": "women_fusion_wear",
         "level":3
     },
     {
         "name": "Women Skirts & Palazzos",
         "categoryId": "women_skirts_palazzos",
-        "parentCategoryName": "Indian & Fusion Wear",
-        "parentCategoryId": "women_indian_and_fusion_wear",
+        "parentCategoryName": "Fusion Wear",
+        "parentCategoryId": "women_fusion_wear",
         "level":3
     },
     {
         "name": "Women Dress Materials",
         "categoryId": "women_dress_materials",
-        "parentCategoryName": "Indian & Fusion Wear",
-        "parentCategoryId": "women_indian_and_fusion_wear",
+        "parentCategoryName": "Fusion Wear",
+        "parentCategoryId": "women_fusion_wear",
         "level":3
     },
     {
         "name": "Women Lehenga Cholis",
         "categoryId": "women_lehenga_cholis",
-        "parentCategoryName": "Indian & Fusion Wear",
-        "parentCategoryId": "women_indian_and_fusion_wear",
+        "parentCategoryName": "Fusion Wear",
+        "parentCategoryId": "women_fusion_wear",
         "level":3
     },
     {
         "name": "Women Dupattas & Shawls",
         "categoryId": "women_dupattas_shawls",
-        "parentCategoryName": "Indian & Fusion Wear",
-        "parentCategoryId": "women_indian_and_fusion_wear",
+        "parentCategoryName": "Fusion Wear",
+        "parentCategoryId": "women_fusion_wear",
         "level":3
     },
     {
         "name": "Women Jackets",
         "categoryId": "women_jackets",
-        "parentCategoryName": "Indian & Fusion Wear",
-        "parentCategoryId": "women_indian_and_fusion_wear",
+        "parentCategoryName": "Fusion Wear",
+        "parentCategoryId": "women_fusion_wear",
         "level":3
     },
     {
         "name": "Women Belts, Scarves & More",
         "categoryId": "women_belts_scarves_more",
-        "parentCategoryName": "Indian & Fusion Wear",
-        "parentCategoryId": "women_indian_and_fusion_wear",
+        "parentCategoryName": "Fusion Wear",
+        "parentCategoryId": "women_fusion_wear",
         "level":3
     },
     {
         "name": "Women Watches & Wearables",
         "categoryId": "women_watches_wearables",
-        "parentCategoryName": "Indian & Fusion Wear",
-        "parentCategoryId": "women_indian_and_fusion_wear",
+        "parentCategoryName": "Fusion Wear",
+        "parentCategoryId": "women_fusion_wear",
         "level":3
     },
     {

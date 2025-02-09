@@ -54,8 +54,8 @@ export const menLevelThree=[
       "parentCategoryId": "men_topwear"
     },
     {
-      "name": "Men Indian & Festive Wear",
-      "categoryId": "men_indian_and_festive_wear",
+      "name": "Men Festive Wear",
+      "categoryId": "men_and_festive_wear",
       "parentCategoryName": "Topwear",
       "parentCategoryId": "men_topwear"
     },
