@@ -1,4 +1,3 @@
-import React from "react";
 import { useAppSelector } from "../../../../Redux Toolkit/Store";
 
 const grid = [
