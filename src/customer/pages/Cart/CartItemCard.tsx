@@ -59,7 +59,7 @@ const CartItemCard : React.FC<CartItemProps> = ({ item }) => {
 
                 </div>
                 <div>
-                    <p className='text-gray-700 font-medium'>₹{item.sellingPrice}</p>
+                    <p className='text-gray-700 font-medium'>${item.sellingPrice}</p>
                 </div>
 
 

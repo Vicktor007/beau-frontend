@@ -43,8 +43,8 @@ const SimilarProductCard = ({ product }: any) => {
 
                 </div>
                 <div className='price flex items-center gap-3 '>
-                    <span className='font-semibold text-gray-800'> ₹{product.sellingPrice}</span>
-                    <span className='text thin-line-through text-gray-400 '>₹{product.mrpPrice}</span>
+                    <span className='font-semibold text-gray-800'> ${product.sellingPrice}</span>
+                    <span className='text thin-line-through text-gray-400 '>${product.mrpPrice}</span>
                     <span className='text-[#00927c] font-semibold'>{product.discountPercent}% off</span>
                 </div>
 

@@ -110,11 +110,11 @@ const ProductDetails = () => {
 
                     <div className='space-y-2'>
                         <div className='price flex items-center gap-3 mt-5 text-lg'>
-                            <span className='font-semibold text-gray-800' > ₹{products.product?.sellingPrice}</span>
-                            <span className='text thin-line-through text-gray-400 '>₹{products.product?.mrpPrice}</span>
+                            <span className='font-semibold text-gray-800' > ${products.product?.sellingPrice}</span>
+                            <span className='text thin-line-through text-gray-400 '>${products.product?.mrpPrice}</span>
                             <span className='text-[#00927c] font-semibold'>{products.product?.discountPercent}% off</span>
                         </div>
-                        <p className='text-sm'>Inclusive of all taxes. Free Shipping above ₹1500.</p>
+                        <p className='text-sm'>Inclusive of all taxes. Free Shipping above $1500.</p>
                     </div>
 
                     <div className='mt-7 space-y-3'>

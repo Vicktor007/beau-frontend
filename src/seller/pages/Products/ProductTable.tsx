@@ -85,8 +85,8 @@ export default function ProductTable() {
                   </div>
                 </StyledTableCell>
                  <StyledTableCell align="right">{item.title}</StyledTableCell>
-                <StyledTableCell align="right"> ₹{item.mrpPrice}.0</StyledTableCell>
-            <StyledTableCell align="right"> ₹{item.sellingPrice}.0</StyledTableCell>
+                <StyledTableCell align="right"> ${item.mrpPrice}.0</StyledTableCell>
+            <StyledTableCell align="right"> ${item.sellingPrice}.0</StyledTableCell>
                    <StyledTableCell align="right">{item.color}</StyledTableCell>
                    <StyledTableCell align="right"> <Button size='small'>in_stock</Button></StyledTableCell>
                    <StyledTableCell align="right">

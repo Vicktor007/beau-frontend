@@ -74,11 +74,11 @@ const OrderDetails = () => {
         <div className='flex justify-between text-sm pt-5 px-5'>
           <div className='space-y-1'>
             <p className='font-bold'>Total Item Price</p>
-            <p>You saved <span className='text-green-500 font-medium text-xs'>₹
+            <p>You saved <span className='text-green-500 font-medium text-xs'>$
               {orders.orderItem?.mrpPrice - orders.orderItem?.sellingPrice}.00</span> on this item</p>
           </div>
 
-          <p className='font-medium'>₹ {orders.orderItem?.sellingPrice}.00</p>
+          <p className='font-medium'>$ {orders.orderItem?.sellingPrice}.00</p>
         </div>
 
         <div className='px-5 '>

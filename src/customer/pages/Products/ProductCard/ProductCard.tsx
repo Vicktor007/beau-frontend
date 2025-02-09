@@ -143,10 +143,10 @@ const ProductCard: React.FC<ProductCardProps> = ({ item }) => {
                     <div className="price flex items-center gap-3 ">
                         <span className="font-semibold text-gray-800">
                             {" "}
-                            ₹{item.sellingPrice}
+                            ${item.sellingPrice}
                         </span>
                         <span className="text thin-line-through text-gray-400 ">
-                            ₹{item.mrpPrice}
+                            ${item.mrpPrice}
                         </span>
                         <span className="text-[#00927c] font-semibold">
                             {item.discountPercent}% off

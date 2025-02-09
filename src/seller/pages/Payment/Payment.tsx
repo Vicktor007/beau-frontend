@@ -20,15 +20,15 @@ const Payment = () => {
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-3'>
                 <Card className='col-span-1 p-5 rounded-md space-y-4'>
                     <h1 className='text-gray-600 font-medium'>Total Earning</h1>
-                    <h1 className='font-bold text-xl pb-1'>₹{sellers.report?.totalEarnings}</h1>
+                    <h1 className='font-bold text-xl pb-1'>${sellers.report?.totalEarnings}</h1>
                     <Divider />
-                    <p className='text-gray-600 font-medium pt-1'>Last Payment : <strong>₹0</strong></p>
+                    <p className='text-gray-600 font-medium pt-1'>Last Payment : <strong>$0</strong></p>
                 </Card>
                 {/* <Card className='col-span-1 p-5 rounded-md space-y-4'>
                     <h1 className='text-gray-600 font-medium'>Payments To Be Settled</h1>
-                    <h1 className='font-bold text-xl pb-1'>₹0</h1>
+                    <h1 className='font-bold text-xl pb-1'>$0</h1>
                     <Divider />
-                    <p className='text-gray-600 font-medium pt-1'>Next Payment : <strong>₹0</strong></p>
+                    <p className='text-gray-600 font-medium pt-1'>Next Payment : <strong>$0</strong></p>
                 </Card> */}
             </div>
             <div className='mt-20'>

@@ -66,7 +66,7 @@ export default function TransactionTable() {
                 </TableCell>
                 <TableCell
                   align="right">
-                  ₹{item.order.totalSellingPrice}
+                  ${item.order.totalSellingPrice}
                 </TableCell>
                 {/* <TableCell align="right">
                   <Button
