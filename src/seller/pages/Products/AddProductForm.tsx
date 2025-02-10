@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import {
@@ -269,7 +269,7 @@ const ProductForm = () => {
                 </MenuItem>
 
                 {colors.map((color, index) => <MenuItem value={color.name}>
-                  <div className="flex gap-3">
+                  <div className="flex gap-3" key={color.hex}>
                     <span style={{ backgroundColor: color.hex }} className={`h-5 w-5 rounded-full ${color.name === "White" ? "border" : ""}`}></span>
                     <p>{color.name}</p>
                   </div>
@@ -326,7 +326,7 @@ const ProductForm = () => {
               >
                 {/* <MenuItem value=""><em>None</em></MenuItem> */}
                 {mainCategory.map((item) => (
-                  <MenuItem value={item.categoryId}>{item.name}</MenuItem>
+                  <MenuItem key={item.categoryId} value={item.categoryId}>{item.name}</MenuItem>
                 ))}
               </Select>
               {formik.touched.category && formik.errors.category && (
@@ -352,7 +352,7 @@ const ProductForm = () => {
               >
                 {formik.values.category &&
                   categoryTwo[formik.values.category]?.map((item) => (
-                    <MenuItem value={item.categoryId}>{item.name}</MenuItem>
+                    <MenuItem key={item.categoryId} value={item.categoryId}>{item.name}</MenuItem>
                   ))}
               </Select>
               {formik.touched.category && formik.errors.category && (
@@ -383,7 +383,7 @@ const ProductForm = () => {
                     categoryThree[formik.values.category],
                     formik.values.category2
                   )?.map((item: any) => (
-                    <MenuItem value={item.categoryId}>{item.name}</MenuItem>
+                    <MenuItem key={item.categoryId} value={item.categoryId}>{item.name}</MenuItem>
                   ))}
               </Select>
               {formik.touched.category && formik.errors.category && (

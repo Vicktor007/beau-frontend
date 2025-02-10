@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useAppDispatch, useAppSelector } from "../../../Redux Toolkit/Store";
+import { useAppSelector } from "../../../Redux Toolkit/Store";
 import {
   Alert,
   Avatar,
@@ -28,7 +28,7 @@ export const style = {
 };
 
 const Profile = () => {
-  const { sellers } = useAppSelector((store) => store);
+  const  sellers  = useAppSelector((state) => state.sellers);
   const [open, setOpen] = React.useState(false);
   const [selectedForm, setSelectedForm] = useState("persionalDetails");
   const handleClose = () => setOpen(false);

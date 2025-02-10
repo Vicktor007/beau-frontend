@@ -1,15 +1,13 @@
 import React, { useEffect } from "react";
-import Demo from "../../components/Demo/Demo";
 import SellingChart from "./SellingChart";
 import { useAppDispatch, useAppSelector } from "../../../Redux Toolkit/Store";
 import { fetchSellerReport } from "../../../Redux Toolkit/Seller/sellerSlice";
 import ReportCard from "./Report/ReportCard";
 import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
 import {
-  Box,
+
   FormControl,
   InputLabel,
-  Menu,
   MenuItem,
   Select,
   SelectChangeEvent,
@@ -28,7 +26,7 @@ const HomePage = () => {
 
   useEffect(() => {
     dispatch(fetchSellerReport(localStorage.getItem("jwt") || ""));
-  }, []);
+  }, [dispatch]);
 
 
 
@@ -96,8 +94,8 @@ const HomePage = () => {
               label="Chart Type"
               onChange={handleChange}
             >
-              {Chart.map((item) => (
-                <MenuItem value={item.value}>{item.name}</MenuItem>
+              {Chart.map((item, index) => (
+                <MenuItem key={index} value={item.value}>{item.name}</MenuItem>
               ))}
             </Select>
           </FormControl>

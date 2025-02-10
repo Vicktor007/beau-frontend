@@ -118,7 +118,8 @@ const Navbar = () => {
             </Button>
           ) : (
             <Button
-              onClick={() => navigate("/account/orders")}
+              
+               onClick={() => user.user && user.user.role === "ROLE_ADMIN" ? navigate("/admin") : navigate("/account/orders")}
               className="flex items-center gap-2"
             >
               <Avatar

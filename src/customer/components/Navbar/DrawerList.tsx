@@ -20,7 +20,7 @@ const DrawerList = ({toggleDrawer}:any) => {
       </ListItem>
       <Divider />
      
-      {mainCategory.map((item) => <ListItem key={item.name} disablePadding>
+      {mainCategory.map((item, index) => <ListItem key={index} disablePadding>
         <ListItemButton onClick={()=>setSelectedCategory(item.categoryId)}>
           <ListItemText primary={item.name} />
         </ListItemButton>
