@@ -30,7 +30,7 @@ const navigate=useNavigate();
 
   useEffect(() => {
     if (localStorage.getItem("jwt")) {
-      dispatch(fetchUserProfile({jwt:localStorage.getItem("jwt") || auth.jwt || "",navigate}));
+      dispatch(fetchUserProfile({jwt:localStorage.getItem("jwt") || auth.jwt || ""}));
       dispatch(fetchSellerProfile(localStorage.getItem("jwt") || sellerAuth.jwt))
     }
 
