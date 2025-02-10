@@ -17,11 +17,11 @@ const API_URL = "/api/users";
 
 export const fetchUserProfile = createAsyncThunk<
   User,
-  { jwt: string; navigate: any }
+  { jwt: string }
 >(
   "user/fetchUserProfile",
   async (
-    { jwt, navigate }: { jwt: string; navigate: any },
+    { jwt}: { jwt: string},
     { rejectWithValue }
   ) => {
     try {
@@ -29,9 +29,7 @@ export const fetchUserProfile = createAsyncThunk<
         headers: { Authorization: `Bearer ${jwt}` },
       });
       console.log(" user profile ", response.data);
-      if (response.data.role === "ROLE_ADMIN") {
-        navigate("/admin");
-      }
+    
       return response.data;
     } catch (error: any) {
       console.log("error ", error.response);

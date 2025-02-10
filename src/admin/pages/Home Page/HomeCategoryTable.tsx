@@ -7,7 +7,6 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import { Box, IconButton, Modal, styled } from "@mui/material";
-import { useAppSelector } from "../../../Redux Toolkit/Store";
 import { HomeCategory } from "../../../types/homeDataTypes";
 import EditIcon from "@mui/icons-material/Edit";
 import UpdateHomeCategoryForm from "./UpdateHomeCategoryForm";

@@ -5,25 +5,25 @@ export const mainCategory = [
     level: 1,
     levelTwoCategory:[
         {
-            "name": "Topwere",
+            "name": "Topwear",
             "categoryId": "men_topwear",
             "parentCategoryId":"men",
             "level":2
         },
         {
-            "name": "Bottomwere",
+            "name": "Bottomwear",
             "categoryId": "men_bottomwear",
             "parentCategoryId":"men",
             "level":2
         },
         {
-            "name": "Innerwere And Sleepwere",
+            "name": "Innerwear And Sleepwear",
             "categoryId": "men_innerwear_and_sleepwear",
             "parentCategoryId":"men",
             "level":2
         },
         {
-            "name": "Footwere",
+            "name": "Footwear",
             "categoryId": "men_footwear",
             "parentCategoryId":"men",
             "level":2
