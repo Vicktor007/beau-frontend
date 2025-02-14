@@ -19,6 +19,7 @@ const initialState: AuthState = {
     role: null,
     loading: false,
     error: null,
+    isAuthenticated: false,
     otpSent:false
 };
 
@@ -102,6 +103,7 @@ const authSlice = createSlice({
         logout: (state) => {
             state.jwt = null;
             state.role = null;
+            state.isAuthenticated = false;
             localStorage.clear()
         },
     },
@@ -139,6 +141,8 @@ const authSlice = createSlice({
             .addCase(signin.fulfilled, (state, action: PayloadAction<AuthResponse>) => {
                 state.jwt = action.payload.jwt;
                 state.role = action.payload.role;
+                state.isAuthenticated = true;
+                state.otpSent = false; 
                 state.loading = false;
             })
             .addCase(signin.rejected, (state, action) => {
