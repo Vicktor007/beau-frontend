@@ -43,7 +43,7 @@ const BankDetailsForm = ({ onClose }: UpdateDetailsFormProps) => {
         ifscCode: sellers.profile.bankDetails?.ifscCode || "",
       });
     }
-  }, [sellers.profile]);
+  }, [formik, sellers.profile]);
 
   return (
     <>

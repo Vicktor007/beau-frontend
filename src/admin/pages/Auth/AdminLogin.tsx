@@ -135,7 +135,7 @@ const AdminLoginForm = () => {
                     variant='contained'
                     onClick={handleSentOtp}
                     sx={{ py: "11px" }}>{
-                        auth.loading ? <CircularProgress  />: "sent otp"}</Button>
+                        auth.loading ? <CircularProgress  />: "send otp"}</Button>
                 }
 
 

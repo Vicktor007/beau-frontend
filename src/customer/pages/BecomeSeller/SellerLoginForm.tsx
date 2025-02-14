@@ -129,7 +129,7 @@ const SellerLoginForm = () => {
                 variant='contained' 
                 onClick={handleSentOtp}
                 sx={{ py: "11px" }}>{
-                    sellerAuth.loading ? <CircularProgress  />: "sent otp"}</Button>
+                    sellerAuth.loading ? <CircularProgress  />: "send otp"}</Button>
                 }
 
 

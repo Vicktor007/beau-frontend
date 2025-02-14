@@ -145,7 +145,7 @@ const SignupForm = () => {
                     disabled={auth.loading}
                     sx={{ py: "11px" }}>
                     {auth.loading ? <CircularProgress size="small"
-                        sx={{ width: "27px", height: "27px" }} /> : "sent otp"}
+                        sx={{ width: "27px", height: "27px" }} /> : "send otp"}
 
                 </Button>
                 }
