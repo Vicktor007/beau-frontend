@@ -17,7 +17,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { mainCategory } from "../../../data/category/mainCategory";
 import CategorySheet from "./CategorySheet";
 import DrawerList from "./DrawerList";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import { useAppDispatch, useAppSelector } from "../../../Redux Toolkit/Store";
 import { FavoriteBorder, LogoutOutlined } from "@mui/icons-material";
@@ -32,6 +32,7 @@ const Navbar = () => {
   const isLarge = useMediaQuery(theme.breakpoints.up("lg"));
 
  const dispatch = useAppDispatch();
+ const location = useLocation();
   const user = useAppSelector((state) => state.user);
   const cart = useAppSelector((state) => state.cart);
   const sellers = useAppSelector((state) => state.sellers);
@@ -108,15 +109,24 @@ const Navbar = () => {
             <SearchIcon className="text-gray-700" sx={{ fontSize: 29 }} />
           </IconButton>
 
-          {!user.user  ? (
-            <Button
-              variant="contained"
-              startIcon={<AccountCircleIcon sx={{ fontSize: "12px" }} />}
-              onClick={() => navigate("/login")}
-            >
-              Login
-            </Button>
-          ) : (
+          {!user.user ? (
+            location.pathname === "/login" ? ( // Added condition to check if on the login page
+              <Button
+                variant="contained"
+                startIcon={<StorefrontIcon sx={{ fontSize: "12px" }} />}
+                onClick={becomeSellerClick}
+              >
+                Become a Seller
+              </Button>
+            ) : (
+              <Button
+                variant="contained"
+                startIcon={<AccountCircleIcon sx={{ fontSize: "12px" }} />}
+                onClick={() => navigate("/login")}
+              >
+                Login
+              </Button>
+            )) : (
             <Button
               
                onClick={() => user.user && user.user.role === "ROLE_ADMIN" ? navigate("/admin") : navigate("/account/orders")}
